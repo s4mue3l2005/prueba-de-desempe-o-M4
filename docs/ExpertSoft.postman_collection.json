@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "15951248-f702-46f8-9ca4-283e16d3887d",
+		"name": "ExpertSoft",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46458420",
+		"_collection_link": "https://samuel-arena.postman.co/workspace/Samuel-Arena's-Workspace~ed3cb703-9598-4bc9-849d-d759e8f4ff8e/collection/46458420-15951248-f702-46f8-9ca4-283e16d3887d?action=share&source=collection_link&creator=46458420"
+	},
+	"item": [
+		{
+			"name": "Customers - Get by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/customers/103",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"customers",
+						"103"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customers - List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customers - Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"John Doe\",\n    \"identification_number\":\"12345\",\n    \"email\":\"john@example.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customers - Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"John Doe\",\n    \"identification_number\": \"12345\",\n    \"address\": \"USNS Davis\\nFPO AP 78518\",\n    \"phone\": \"(873)222-2692x09480\",\n    \"email\": \"john@example.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/customers/103",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"customers",
+						"103"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customers - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/customers/103",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"customers",
+						"103"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report - Total paid by customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/reports/total_paid_by_customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reports",
+						"total_paid_by_customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report - Pending invoices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/reports/pending_invoices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reports",
+						"pending_invoices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report - Transactions by platform",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/reports/transactions_by_platform/Nequi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"reports",
+						"transactions_by_platform",
+						"Nequi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
